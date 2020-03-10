@@ -2,6 +2,8 @@
 
 It is a HTTP REST based geo distributed with near realtime cross origin data replication, LRU caching service. It also supports low latency response times based on closest edge location. There is also an automatic fail over call back function in case one of the nodes fails to send a json response for a client request
 
+There is one central node to which client send api requests with the choice for the cache to be checked. There maybe several secondary nodes. The central node also sends the secondary nodes a JSON object containing a list of all active nodes. Node 0 is the central node by default. 
+
 Features:
 
 - Configarible cache size
