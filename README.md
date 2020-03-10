@@ -17,5 +17,6 @@ Features:
 3. Central server posts info "" to cleint
 4 If this request to post fails, it triggers the next closest location to send the same
 5. Cache is checked and updated if need be everytime a client posts a choice to the central server
+6. Whenever, cache is updated in any particular node, a post request is send to all nodes witht he latest cache file for global replication
 
 
