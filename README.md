@@ -12,6 +12,10 @@ Features:
 - Automatic data replicationa across all nodes
 - Low latency geolocation based responses from edge lcoations
 
+<h1>Tech Stack</h1>
+
+Node.js Express Axios !
+
 <h1> How does it work?</h1>
 
 1. Client sends a POST reqquest with location and choice to central server
@@ -20,5 +24,14 @@ Features:
 4 If this request to post fails, it triggers the next closest location to send the same
 5. Cache is checked and updated if need be everytime a client posts a choice to the central server
 6. Whenever, cache is updated in any particular node, a post request is send to all nodes witht he latest cache file for global replication
+
+
+<h1>Configuring the setup</h1>
+
+- git clone repo onto central node server
+- npm install
+- To configure, set node index to 0 in index.js
+
+<h1> Improvements </h1>
 
 
